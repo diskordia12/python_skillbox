@@ -21,6 +21,6 @@ position = ''
 for symbol in user_text:
     counter += 1
     if symbol == '*':
-        position += str(counter) + ' '
+        break
 
-print(f'Символ "*" стоит на позиции {position}')
+print(f'Символ "*" стоит на позиции {counter}')

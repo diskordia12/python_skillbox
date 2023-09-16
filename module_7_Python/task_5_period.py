@@ -1,4 +1,4 @@
-print('Задача 5. Отрезок')
+print('Task 5. Period')
 
 # Напишите программу,
 # которая считывает с клавиатуры два числа a и b,
@@ -7,8 +7,8 @@ print('Задача 5. Отрезок')
 
 # (среднее арифметическое можно посчитать поделив сумму подходящих чисел на их количество)
 
-a = int(input(f'Введите начало отрезка а = '))
-b = int(input(f'Введите конец отрезка b = '))
+a = int(input(f'Enter the beginning of the segment а = '))
+b = int(input(f'Enter the end of the segment b = '))
 sum_numbers = 0
 amount_numbers = 0
 

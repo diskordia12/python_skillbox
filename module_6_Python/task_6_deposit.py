@@ -1,4 +1,4 @@
-print('Задача 6. Вклады')
+print('Task 6. Deposit')
 
 # Вклад в банке составляет X рублей.
 # Ежегодно он увеличивается на P процентов,
@@ -10,13 +10,13 @@ print('Задача 6. Вклады')
 # которая по данным числам X, Y, P определяет,
 # сколько лет пройдёт, прежде чем сумма достигнет значения Y.
 
-bank_deposit = int(input('Ваш текущий вклад: '))
-percent = int(input('Процентная ставка: '))
-bank_deposit_future = int(input('Сколько вы хотите накопить: '))
+bank_deposit = int(input('Your current deposit: '))
+percent = int(input('interest rate: '))
+bank_deposit_future = int(input('How much would you like to save: '))
 years = 0
 
 while bank_deposit < bank_deposit_future:
     years += 1
     bank_deposit += (bank_deposit * percent)/100
     bank_deposit = int(bank_deposit)
-print(f'Вы накопите за {years} лет')
+print(f'You will accumulate the desired amount for {years} years')

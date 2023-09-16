@@ -1,4 +1,4 @@
-print('Задача 5. Обычный день на работе')
+print('Task 5. Typical day')
 
 # Максим программирует целый день на работе и вечером идёт домой.
 # Каждый час начальство кидает ему несколько задач,
@@ -48,23 +48,22 @@ print('Задача 5. Обычный день на работе')
 # Рабочий день закончился. Всего выполнено задач: 21
 # Нужно зайти в магазин
 
-print('Начался 8-часовой рабочий день')
+print('The 8-hour working day begins')
 wife_called = False
 hour = 0
 task = 0
 
-
 while hour < 8:
     hour += 1
-    print(f'Начался {hour} час')
-    task += int(input('Сколько задач решит Максим? '))
-    wife_called_input = int(input('Звонит жена. Взять трубку? (1-да, 0-нет) '))
+    print(f'{hour} hour')
+    task += int(input('How many tasks for Maksim? '))
+    wife_called_input = int(input('Wife\'s call. Get the phone? (1-yes, 0-no) '))
     wife_called = wife_called_input != 0
 
 # print(type(wife_called))
 
-print(f'Рабочий день закончился. Всего выполнено задач: {task}')
+print(f'Working day is over. Total tasks completed: {task}')
 
 if wife_called:
-    print('Нужно зайти в магазин')
+    print('Need to go to the store')
 

@@ -1,4 +1,4 @@
-print('Задача 2. Долги')
+print('Task 2. Debts')
 
 # «МирПрогБанк» наконец-то разделил законопослушных граждан и должников и поместил их в разные базы.
 # Но банк не торопится сильно давить на неплательщиков.
@@ -29,7 +29,7 @@ print('Задача 2. Долги')
 total_of_debtors = int(input('Введите количество должников: '))
 total_debt = 0
 
-for debtor in range (0, total_of_debtors + 1, 5):
+for debtor in range(0, total_of_debtors + 1, 5):
     print(f'Должник с номером {debtor}')
     total_debt += int(input('Сколько должны? '))
 
