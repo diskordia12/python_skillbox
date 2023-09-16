@@ -1,4 +1,4 @@
-print('Задача 2. Коллекторы')
+print('Task 2. Collectors')
 
 # Напишите робота для коллекторов.
 # В самом начале он спрашивает имя должника и сумму долга,
@@ -17,17 +17,17 @@ print('Задача 2. Коллекторы')
 # Сколько рублей вы внесёте прямо сейчас, чтобы её погасить? 110
 # Отлично, Василий! Вы погасили долг. Спасибо!
 
-name = input('Ваше имя: ')
-credit = int(input('Введите сумму вашего долга: '))
+name = input('Enter your name: ')
+credit = int(input('Enter amount of your debt: '))
 money_for_credit= 0
-print(f'{name}, ваша задолженность составляет {credit} рублей')
+print(f'{name}, your debt {credit} EUR')
 
 while True:
-    money_for_credit = int(input('Сколько рублей вы внесёте прямо сейчас, чтобы её погасить? '))
+    money_for_credit = int(input('How many EUR will you pay now to settle your debt? '))
     if money_for_credit >= credit:
         break
-    print(f'Маловато, {name}. Давайте ещё раз.')
+    print(f'Not enough, {name}. Let\'s again.')
 
-print(f'Отлично, {name}! Вы погасили долг. Спасибо!')
+print(f'Great, {name}! You paid off the debt. Thanks!')
 
 

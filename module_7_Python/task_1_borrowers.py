@@ -1,4 +1,4 @@
-print('Задача 1. Должники')
+print('Task 1. borrowers')
 
 # В базе банка хранятся данные и должников, и законопослушных граждан.
 # Каждому человеку система присваивает свой номер. У нас есть случайная выборка из десяти номеров.
@@ -13,10 +13,10 @@ print('Задача 1. Должники')
 even_and_positive_counter = 0
 
 for i in range(0, 10):
-    number = int(input(f'Введите {i + 1} число: '))
+    number = int(input(f'Enter {i + 1} number: '))
     if number % 2 == 0 and number > 0:
         even_and_positive_counter += 1
 
-print(f'Количество должников: {even_and_positive_counter}')
+print(f'Number of borrowers: {even_and_positive_counter}')
 
 

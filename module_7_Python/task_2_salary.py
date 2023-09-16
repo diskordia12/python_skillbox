@@ -1,4 +1,4 @@
-print('Задача 2. Посчитай чужую зарплату...')
+print('Task 2. Salary')
 
 # Бухгалтер устала постоянно считать вручную среднегодовую зарплату сотрудников компании
 # и, чтобы облегчить себе жизнь, обратилась к программисту.
@@ -7,11 +7,11 @@ print('Задача 2. Посчитай чужую зарплату...')
 # которая принимает от пользователя зарплату сотрудника за каждый из 12 месяцев
 # и выводит на экран среднюю зарплату за год.
 
-total_salary=0
+total_salary = 0
 
 for month in range(0, 12):
-    month_salary = int(input(f'Укажите свою зарплату за {month + 1} месяц: '))
+    month_salary = int(input(f'Enter your {month + 1} month salary: '))
     total_salary += month_salary
 
-print(f'Среднегодовая зарплата сотрудника равна {total_salary/12}')
+print(f'Average annual salary of an employee is equal {total_salary/12}')
 

@@ -1,4 +1,4 @@
-print('Задача 7. Игра «Угадай число»')
+print('Task 7. Game')
 
 # В одной из практических работ мы делали задачу, где папа-программист
 # написал для сына программу, которая просит его угадать число.
@@ -23,14 +23,14 @@ dad_number = 7
 attempts = 0
 
 while True:
-    son_number = int(input('Введите число:'))
+    son_number = int(input('Enter number:'))
     attempts += 1
     if son_number == dad_number:
         break
     elif son_number > dad_number:
-        print('Число больше, чем нужно. Попробуйте еще раз!')
+        print('The number is more than necessary. Try again!')
     else:
-        print('Число меньше, чем нужно. Попробуйте ещё раз!')
+        print('The number is smaller. Try again!')
 
-print(f'Вы угадали! Число попыток: {attempts}')
+print(f'You have guessed! Number of attempts: {attempts}')
 

@@ -1,4 +1,4 @@
-print('Задача 4. Поставьте оценку!')
+print('Task 4. Grade')
 
 # Вася выложил своё новое приложение на платформу для начинающих разработчиков,
 # на ней пользователи могут ставить оценку приложению от −100 до 100.
@@ -23,12 +23,12 @@ positive = 0
 negative = 0
 
 while True:
-    grade = float(input('Ваша оценка: '))
+    grade = float(input('Your grade: '))
     if grade == 0:
         break
     if grade > 0:
         positive += 1
     else:
         negative += 1
-print(f'Кол-во положительных чисел: {positive}')
-print(f'Кол-во отрицательных чисел: {negative}')
+print(f'Number of positive numbers: {positive}')
+print(f'Number of negative numbers: {negative}')

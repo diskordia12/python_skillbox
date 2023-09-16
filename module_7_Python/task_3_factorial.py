@@ -1,4 +1,4 @@
-print('Задача 3. Факториал')
+print('Task 3. factorial')
 
 # Мы всё ближе и ближе подбираемся к серьёзной математике.
 # Одна из классических задач - задача на нахождение факториала числа.
@@ -11,10 +11,10 @@ print('Задача 3. Факториал')
 # # Введите число: 5
 # Факториал числа 5 равен 120
 
-number = int(input('Введите число: '))
+number = int(input('Enter number: '))
 factorial = 1
 
 for i in range(1, number + 1):
     factorial *= i
 
-print(f'Факториал числа {number} равен {factorial}')
+print(f'Factorial {number} is {factorial}')
