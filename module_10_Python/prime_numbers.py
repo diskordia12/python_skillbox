@@ -16,7 +16,8 @@
 #
 
 number_amount = int(input('Enter an amount of numbers: '))
-simple_numbers = 0
+prime_number = 0
+
 
 def is_prime_number(n: int) -> bool:
     from math import sqrt
@@ -29,10 +30,9 @@ def is_prime_number(n: int) -> bool:
 for i in range(1, number_amount + 1):
     number = int(input(f'Enter {i} number: '))
     if is_prime_number(number):
-        simple_numbers += 1
+        prime_number += 1
 
-print(f'Amount of simple numbers: {simple_numbers}')
+print(f'Amount of simple numbers: {prime_number}')
 
-print(0%2)
 
 

@@ -4,8 +4,6 @@
 
 numbers_amount = int(input('Enter amount of numbers: '))
 
-sum_of_digits = 0
-number_dgts = 0
 
 def get_digits_sum(n: int) -> int:
     summ = 0
@@ -14,11 +12,14 @@ def get_digits_sum(n: int) -> int:
     return summ
 
 
+max_sum = 0
+max_number = 0
+
 for i in range(1, numbers_amount + 1):
     number = int(input(f'Enter {i} number: '))
-    if get_digits_sum(number) > sum_of_digits:
-        sum_of_digits = get_digits_sum(number)
-        number_dgts = number
+    digit_sum = get_digits_sum(number)
+    if digit_sum > max_sum:
+        max_sum, max_number = digit_sum, number
 
-print(f'The number with the largest sum of digits {number_dgts}'
-      f' and the sum of digits: {sum_of_digits}')
+print(f'The number with the largest sum of digits {max_number}'
+      f' and the sum of digits: {max_sum}')
