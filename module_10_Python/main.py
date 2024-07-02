@@ -92,8 +92,8 @@
 # x_lim = 50
 # y_lim = 20
 #
-# for y in range(y_lim):
-#     for x in range(x_lim):
+# for y in range(1, y_lim + 1):
+#     for x in range(1, x_lim + 1):
 #         if y == y_lim // 2:
 #             print('-', end='')
 #         elif x == x_lim // 2:
@@ -134,11 +134,11 @@
 
 # x_lim = 50
 # y_lim = 20
-#
+
 # delta = 6  # число 3 выбрано "на глаз", в зависимости от него дорога будет шире/уже
 #
-# for y in range(y_lim):
-#     for x in range(x_lim):
+# for y in range(1, y_lim + 1):
+#     for x in range(1, x_lim + 1):
 #         if y == y_lim // 2:
 #             print('-', end='')
 #         elif x == x_lim // 2:
@@ -192,8 +192,8 @@
 # N_amount = int(input('Сколько будет чисел: '))
 # numeral_count = 0
 #
-# for num in range(N_amount):
-#     number = int(input(f'Введите {N_amount} число:'))
+# for num in range(1, N_amount + 1):
+#     number = int(input(f'Введите {num} число:'))
 #     while number > 0:
 #         if number % 10 > 5:
 #             numeral_count += 1
@@ -209,5 +209,5 @@
 #
 # for start in range(N + 1):
 #     for number in range(start, N + 1):
-#         print(number, end = '\t')
+#         print(number, end='\t')
 #     print()
